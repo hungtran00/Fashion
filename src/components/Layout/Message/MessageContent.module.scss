@@ -1,0 +1,55 @@
+.message__content {
+    position: fixed;
+    bottom: 100px;
+    right: 40px;
+    // padding: 4px;
+    border: 1px solid #f6f6f6;
+    background-color: white;
+    transition: all 2s;
+    border-radius: 6px;
+    box-shadow      : 0 1px 15px rgb(0 0 0 / 12%);
+
+
+@keyframes Fadi {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+    &_container {
+        display: flex;
+        // justify-content: center;
+        align-items: center;
+        padding: 10px 15px;
+        border-bottom: 1px solid #e7e8e9;
+        border-radius: 6px;
+        cursor: pointer;
+
+        a {
+            font-size: 1.4rem;
+            padding: 5px 0;
+            display: block;
+            // border-bottom: 1px solid #e7e8e9;
+            margin-left: 5px;
+
+           
+        }
+
+        &:hover {
+                background-color: #e7e8e9;
+        }
+
+    }
+    &-icon {
+        font-size: 2.4rem;
+        // margin-right: 5px;
+        padding: 5px 0;
+        color: blue;
+
+       
+    }
+
+}

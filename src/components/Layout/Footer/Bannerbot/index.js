@@ -2,6 +2,7 @@ import styles from './Bannerbot.module.scss'
 import classNames from 'classnames/bind'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTwitter, faFacebook, faPinterest } from '@fortawesome/free-brands-svg-icons'
+import {SiInstagram} from 'react-icons/si'
 
 const cx = classNames.bind(styles)
 
@@ -12,8 +13,8 @@ function Banerbot() {
                 <div className={cx('banner__content')}>
                     <div className={cx('twitter__overlay')}></div>
                     <div className={cx('banner__innercontent')}>
-                        <FontAwesomeIcon icon={faTwitter} />
-                        <span>TWITTER</span>
+                        <SiInstagram/>
+                        <a href="https://www.instagram.com/ivy_moda/">INSTAGRAM</a>
                     </div>
                 </div>
             </div>
@@ -22,7 +23,7 @@ function Banerbot() {
                     <div className={cx('facebook__overlay')}></div>
                     <div className={cx('banner__innercontent')}>
                         <FontAwesomeIcon icon={faFacebook} />
-                        <span>FACEBOOK</span>
+                        <a href="https://www.facebook.com/thoitrangivymoda/">FACEBOOK</a>
                     </div>
                 </div>
             </div>
@@ -31,7 +32,7 @@ function Banerbot() {
                     <div className={cx('pinterest__overlay')}></div>
                     <div className={cx('banner__innercontent')}>
                         <FontAwesomeIcon icon={faPinterest} />
-                        <span>PINTEREST</span>
+                        <a href="https://www.pinterest.com/ivymoda/_saved/">PINTEREST</a>
                     </div>
                 </div>
             </div>

@@ -39,9 +39,9 @@ function Sidebar(props) {
     }, [])
     //State
     const [check, setCheck] = useState([])
-    const [dataResult, setDataResult] = useState([])
+    // const [dataResult, setDataResult] = useState([])
     const [dataCategory, setDataCategory] = useState([])
-    const [dataPrice, setDataPrice] = useState([])
+    // const [dataPrice, setDataPrice] = useState([])
     const [dataColor, setDataColor] = useState([])
 
     const [dataSize, setDataSize] = useState([])
@@ -51,10 +51,10 @@ function Sidebar(props) {
     const sendData = (data) => {
         props.parentCallback(data)
     }
-    const [valuePrice, setValuePirce] = useState(1)
+    // const [valuePrice, setValuePirce] = useState(1)
     const HandleRenderRad = () => {
         return category.map((item, index) => {
-            const className = `category__content__${item}`
+            const className = `${item}`
             if (item.name !== "All")
                 return (
                     <div key={index} className={cx(className)}>
@@ -107,44 +107,10 @@ function Sidebar(props) {
         <div className={cx('sidebar__category')}>
             <div className={cx('category__title')}>Category</div>
             <div className={cx('category__content')} >
-                {/* <div className={cx('category__content__women')}>
-                    <input type='radio' name="type" />
-                    <span>Woman</span>
-                </div>
-                <div className={cx('category__content__kids')}>
-                    <input type='radio' name="type" />
-                    <span>Kids</span>
-                </div>  <div className={cx('category__content__accessories')}>
-                    <input type='radio' name="type" />
-                    <span>Accessories</span>
-                </div>  <div className={cx('category__content__man')}>
-                    <input type='radio' name="type" />
-                    <span>Man</span>
-                </div>  <div className={cx('category__content__tech')}>
-                    <input type='radio' name="type" />
-                    <span>Technology</span>
-                </div> */}
                 <HandleRenderRad />
             </div>
         </div>
-        {/* <div className={cx('sidebar__price')}>
-            <input type='range' min='1' max='1000' onClick={(e) => {
-                const value = e.target.value
-
-                // console.log(dataFilter)
-                const newData = product.data.filter((item, index) => {
-                    return parseInt(item.price) < parseInt(value)
-                }
-
-                )
-                sendData(newData)
-                setDataPrice(newData)
-                setValuePirce(value)
-
-
-            }} />
-            <span>${valuePrice}.00</span>
-        </div> */}
+      
         <div className={cx('sidebar__color')}>
             <div className={cx('color__title')}>Products color</div>
             <div className={cx('color__content')}>

@@ -1,0 +1,113 @@
+.guide {
+
+    display: flex;
+    justify-content: center;
+
+    &__container {
+        max-width: 1200px;
+        
+        h1 {
+            font-size: 1.8rem;
+            margin: 20px 0;
+            font-weight: 400;
+        }
+        img {
+            width: 1200px;
+        }
+
+        &_content {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+    
+            &-left {
+                padding: 30px;
+                border: 1px solid #333;
+                margin-top: 30px;
+                border-top-left-radius: 35px;
+                border-bottom-right-radius: 35px;
+                min-width: 350px;
+                max-height: 400px;
+                
+                &-list {
+                    list-style-type: none;
+                   
+                }
+                &-item {
+                    &-item {
+                        padding: 15px 0;
+
+                        p {
+                            font-size: 1.5rem;
+                            font-weight: bold;
+                            line-height: 1.5;
+                            opacity: 0.5;
+                            cursor: pointer;
+
+                            &:hover {
+                                color: red;
+                            }
+                        }
+                    }
+                }
+                
+                
+            }
+            &-right {
+                margin-left: 30px;
+                min-width: 750px;
+                h1 {
+                    font-size: 2rem;
+                    margin: 30px 0 10px 0;
+                }
+                h2 {
+                    font-size: 1.5rem;
+                }
+                h3 {
+                    font-size: 1.4rem;
+                    margin: 10px 0;
+                }
+                p {
+                    font-size: 1.5rem;
+                    margin: 15px 0;
+                    line-height: 1.5;
+                }
+    
+            }
+           
+        }
+
+        &_list {
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+
+            img {
+                max-width: 700px;
+            }
+
+            &-right {
+                margin: 80px;
+                h1 {
+                    font-size: 2rem;
+                }
+                p {
+                    font-size: 1.4rem;
+                    margin: 25px 0;
+                }
+                &>button {
+                    border: none;
+                    color: white;
+                    background-color: black;
+                    font-size: 1.5rem;
+                    padding: 15px 20px;
+                    font-weight: bold;
+                    cursor: pointer;
+                    
+                }
+
+            }
+        }
+       
+    }
+    
+}

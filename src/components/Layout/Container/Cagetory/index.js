@@ -1,5 +1,6 @@
 import styles from './Cagetory.module.scss'
 import classNames from 'classnames/bind'
+// import './category.scss'
 const cx = classNames.bind(styles);
 function Cagetory() {
     return (
@@ -32,13 +33,13 @@ function Cagetory() {
                 </div>
 
                 <div className={cx('cagetory__title')}>
-                    <span>Accesores</span>
+                    <span>Accesories</span>
                 </div>
             </div>
             <div className={cx('cagetory__item')}>
                 <div className={cx('cagetory__overlay')}></div>
                 <div className={cx('cagetory__img')}>
-                    <img src="img/cagetory/tech.jpg" alt='woman-cart' />
+                    <img src="img/cagetory/phone.jpg" alt='woman-cart' />
 
                 </div>
 

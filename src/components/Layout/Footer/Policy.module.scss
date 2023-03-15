@@ -1,0 +1,71 @@
+.policy {
+    // max-width: 1200px;
+    display: flex;
+    justify-content: center;
+
+    &__container {
+        max-width: 1200px;
+
+        h1 {
+            font-size: 1.8rem;
+            margin: 20px 0;
+            font-weight: 200;
+        }
+        
+        &>img {
+            max-width: 1200px;
+        }
+
+        &_content {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+
+            &-left {
+                border: 1px solid #e7e8e9;
+                padding: 30px;
+                margin-top: 30px;
+                min-width: 400px;
+                max-height: 500px;
+                border-top-left-radius: 30px;
+                border-bottom-right-radius: 30px;
+
+
+                &-list {
+                    list-style-type: none;
+                    margin-top: 25px;
+                }
+                &-item {
+                    
+
+                    &-item {
+                        padding: 10px 0;
+                        p {
+                            font-size: 1.6rem;
+                            // padding: 15px 0;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+            &-right {
+                margin-top: 30px;
+                margin-left: 30px;
+                min-width: 750px;
+
+                h1 {
+                    font-size: 2.2rem;
+                    margin: 15px 0;
+                }
+                h2 {
+                    font-size: 1.4rem;
+                    margin: 15px 0;
+                }
+                p {
+                    font-size: 1.6rem;
+                    line-height: 1.5;
+                }
+            }
+        }
+    }
+
+}

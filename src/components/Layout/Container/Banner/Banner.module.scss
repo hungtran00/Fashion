@@ -1,14 +1,33 @@
 .bannertop {
-    height           : calc(100vh - 6.5rem);
-    background-repeat: no-repeat;
-    background-size  : cover;
-    background-image : url('../../../../../public/img/slide1-bg.jpg');
-    display          : flex;
-    justify-content  : center;
-    align-items      : center;
+    // height           : calc(100vh - 6.5rem);
+    // background-repeat: no-repeat;
+    // background-size  : cover;
+    // background-image : url('../../../../../public/img/slide1-bg.jpg');
+    // background-image : url('../../../../../public/img/slider2.jpg');
+    // display          : flex;
+    // justify-content  : center;
+    // align-items      : center;
     position         : relative;
+    
 
+    &__img {
+        display          : flex;
+        justify-content  : center;
+        align-items      : center;
+        position         : relative;
+        height           : calc(100vh - 6rem);
+        background-repeat: no-repeat;
+        background-size  : cover;
+        overflow-y: hidden;
+        overflow-x: auto;
+        overflow: hidden;
+        scroll-behavior: smooth;
+    }
 
+    &__item img {
+        
+        margin-top: 28px;
+    }
     &__container {
         position      : relative;
         display       : flex;
@@ -34,12 +53,43 @@
         border       : none;
         width        : 157px;
         height       : 45px;
-        margin-top   : 50px;
+        margin-top   : 20px;
         font-size    : 2rem;
         cursor       : pointer;
 
         &:hover {
             opacity: 0.8;
+        }
+    }
+    .btnLeft {
+        position: absolute;
+        top: 40%;
+        left: 30px;
+        font-size: 3rem;
+        color: black;
+        display: flex;
+        align-items: center;
+        opacity: 0.6;
+        &:hover {
+            opacity: 1;
+            cursor: pointer;
+            transition: all 3s;
+        }
+    }
+    .btnRight {
+        position: absolute;
+        top: 40%;
+        right: 30px;
+        font-size: 3rem;
+        color: black;
+        align-items: center;
+        display: flex;
+
+        opacity: 0.6;
+        &:hover {
+            opacity: 1;
+            cursor: pointer;
+            transition: all 3s;
         }
     }
 }

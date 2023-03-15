@@ -38,12 +38,12 @@ function Header() {
 
                     <NavLink to='/' style={({ isActive }) => isActive ? activeStyle : undefined} className={cx('header__item')} end><span>HOME</span></NavLink>
                     <NavLink to='/shop' className={({ isActive }) => isActive ? cx("activeNav", "header__item") : cx("header__item")} ><span>SHOP</span></NavLink>
-                    <NavLink to='/blog' className={({ isActive }) => isActive ? cx("activeNav", "header__item") : cx("header__item")} ><span>BLOG</span></NavLink>
+                    <NavLink to='/contact' className={({ isActive }) => isActive ? cx("activeNav", "header__item") : cx("header__item")} ><span>CONTACT</span></NavLink>
                     <NavLink to='/features' className={({ isActive }) => isActive ? cx("activeNav", "header__item") : cx("header__item")} ><span>FEATURES</span></NavLink>
                 </ul>
             </div>
             <div className={cx('header__title')}>
-                <Link to='/'>CLOTHES SHOP</Link>
+                <Link to='/'>FASHION SHOP</Link>
             </div>
             <div className={cx('header__icon')}>
                 <span>
@@ -145,7 +145,7 @@ function Header() {
                 <ul className={cx('menu__list')}>
                     <NavLink to='/' style={({ isActive }) => isActive ? activeStyle : undefined} className={cx('header__item')} end><span>HOME</span></NavLink>
                     <NavLink to='/shop' className={({ isActive }) => isActive ? cx("activeNav", "header__item") : cx("header__item")} ><span>SHOP</span></NavLink>
-                    <NavLink to='/blog' className={({ isActive }) => isActive ? cx("activeNav", "header__item") : cx("header__item")} ><span>BLOG</span></NavLink>
+                    <NavLink to='/contact' className={({ isActive }) => isActive ? cx("activeNav", "header__item") : cx("header__item")} ><span>CONTACT</span></NavLink>
                     <NavLink to='/features' className={({ isActive }) => isActive ? cx("activeNav", "header__item") : cx("header__item")} ><span>FEATURES</span></NavLink>
                 </ul>
 

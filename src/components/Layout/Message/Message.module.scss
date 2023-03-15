@@ -1,0 +1,15 @@
+.message {
+
+    &__icon {
+        font-size: 5.5rem;
+        color: royalblue;
+        position: fixed;
+        bottom: 20px;
+        right: 35px;
+        cursor: pointer;
+    }
+
+    &__none {
+        display: none;
+    }
+}

@@ -38,6 +38,75 @@
         font-size    : 2rem;
         margin-bottom: 2rem;
     }
+    &__color {
+
+        display: flex;
+        &_item {
+
+            &>span {
+                font-size: 1.2rem;
+                padding: 5px;
+            }
+
+            &>button {
+                color: black;
+                border: none;
+                padding: 10px 7px;
+                font-family: "Noto Sans", sans-serif;
+                border-radius: 43px;
+                margin: 10px 10px 10px 0;
+                cursor: pointer;
+            }
+        }
+
+        // &-black {
+        //     background-color: black;
+        // }
+        // &-blue {
+        //     background-color: blue;
+        // }
+        // &-pink {
+        //     background-color: pink;
+        // }
+        // &-gray {
+        //     background-color: gray;
+        // }
+        // &-white {
+        //     background-color: white;
+        // }
+
+        &-selected {
+            background-color: teal;
+            color: white;
+            // box-shadow: 0px 0px 10px 7px rgb(0, 204, 160);
+        }
+
+    }
+    &__size {
+
+        display: flex;
+        margin: 10px 0;
+        &_item {
+
+            &>span {
+                font-size: 1.2rem;
+                padding: 5px;
+            }
+
+            &>button {
+                color: black;
+                border: none;
+                padding: 8px 10px;
+                font-family: "Noto Sans", sans-serif;
+                cursor: pointer;
+                margin: 5px 8px 5px 0 ;
+            }
+        }
+
+        &-selected {
+            background-color: teal;
+        }
+    }
 
     &__service {
         &>button {
@@ -82,6 +151,11 @@
     &__description {
         width  : 50%;
         padding: 2.5rem 4rem;
+
+
+        p {
+            font-size: 1.8rem;
+        }
     }
 
 }

@@ -9,6 +9,23 @@ import { addToCart } from "../../reducers/cart/cartSlice"
 const cx = classNames.bind(styles)
 
 function ProductDetail() {
+    const colors =
+    [
+        "black",
+        "blue",
+        "gray",
+        "pink",
+        "white"
+    ]
+const sizes =
+    [
+        "S",
+        "M",
+        "L"
+
+    ]
+    const [colorIndex, setColorIndex] = useState(0)
+    const [sizeIndex, setSizeIndex] = useState(0)
     const params = useParams()
     const dispatch = useDispatch()
     const product = useSelector((state) => state.product)
@@ -24,6 +41,7 @@ function ProductDetail() {
         sessionStorage.setItem('quantity', quanlity)
         dispatch(addToCart(product))
     }
+    // const className = {`${colorIndex === index ? `product__color-selected` : `product__color-${color}`}`}
     return (
         <div className={cx("product")}>
             {
@@ -37,6 +55,31 @@ function ProductDetail() {
                                 <div className={cx('product__title')}>{item.name}</div>
                                 <div className={cx('product__price')}>${item.price}.00</div>
                                 <div className={cx('product__detail')}>{item.detail}</div>
+                                <p>Color</p>
+                                <div className={cx('product__color')}>
+                                    {colors.map((color,index)=>{
+                                        return (
+                                            <div className={cx('product__color_item')}> 
+                                                <button key={index} className={cx(colorIndex === index ? 'product__color-selected' : `product__color-${color}`)} onClick={()=> setColorIndex(index)}>
+                                                    {color}
+                                                </button>
+                                            </div>
+                                        )
+                                    })}
+                                </div>
+                                <p>Size</p>
+                                <div className={cx('product__size')}>
+                                    {sizes.map((size,index)=>{
+                                        return (
+                                            <div className={cx('product__size_item')}>
+                                                <button key={index} className={cx(sizeIndex === index ? 'product__size-selected' : `product__size-${size}`)} onClick={()=> setSizeIndex(index)}>
+                                                    {size}
+                                                </button>
+                                            </div>
+                                        )
+                                    })}
+                                </div>
+                                
                                 <div className={cx('product__service')}>
                                     <input type="number" value={cartQuanlity} min="1" max="1000" onChange={(e) => setCartQuanlity(parseInt(e.target.value))} />
                                     <button onClick={() => handleAddToCart(item, cartQuanlity)}>ADD TO CART</button>
