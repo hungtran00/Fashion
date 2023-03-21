@@ -11,11 +11,11 @@ const cx = classNames.bind(styles)
 function ProductDetail() {
     const colors =
     [
-        "black",
-        "blue",
-        "gray",
-        "pink",
-        "white"
+        "Black",
+        "Blue",
+        "Gray",
+        "Pink",
+        "White"
     ]
 const sizes =
     [
@@ -53,7 +53,10 @@ const sizes =
                             </div>
                             <div className={cx("product__description")}>
                                 <div className={cx('product__title')}>{item.name}</div>
-                                <div className={cx('product__price')}>${item.price}.00</div>
+                                <div className={cx('product__price-list')}>
+                                    <div className={cx('product__price')}>${item.price}.00</div>
+                                    <span>$1000.00</span>
+                                </div>
                                 <div className={cx('product__detail')}>{item.detail}</div>
                                 <p>Color</p>
                                 <div className={cx('product__color')}>

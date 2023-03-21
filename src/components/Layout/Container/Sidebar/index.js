@@ -41,7 +41,7 @@ function Sidebar(props) {
     const [check, setCheck] = useState([])
     // const [dataResult, setDataResult] = useState([])
     const [dataCategory, setDataCategory] = useState([])
-    // const [dataPrice, setDataPrice] = useState([])
+    const [dataPrice, setDataPrice] = useState([])
     const [dataColor, setDataColor] = useState([])
 
     const [dataSize, setDataSize] = useState([])
@@ -51,7 +51,7 @@ function Sidebar(props) {
     const sendData = (data) => {
         props.parentCallback(data)
     }
-    // const [valuePrice, setValuePirce] = useState(1)
+    const [valuePrice, setValuePirce] = useState(1)
     const HandleRenderRad = () => {
         return category.map((item, index) => {
             const className = `${item}`
@@ -126,6 +126,23 @@ function Sidebar(props) {
                     })
                 }
             </div>
+        </div>
+        <div className={cx('sidebar__price')}>
+            <div className={cx('sidebar__price_title')}>Products Price</div>
+            <input type="range" min='1' max='900' onClick={(e)=> {
+                const value = e.target.value
+                const newData = product.data.filter((item,index)=> {
+                    return parseInt(item.price) < parseInt(value)
+                })
+                sendData(newData)
+                setDataPrice(newData)
+                setValuePirce(value)
+            
+
+            }} 
+            />
+            <span>{valuePrice}.00</span>
+            
         </div>
         <div className={cx('sidebar__size')}>
             <div className={cx('size__title')}>Products size</div>

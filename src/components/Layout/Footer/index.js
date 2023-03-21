@@ -105,10 +105,16 @@ function Footer() {
                 <ul className={cx('footer__list')}>
                     <li className={cx('footer__title')}>Download App</li>
                     <li className={cx('footer__item')}>
-                        <img className={cx('footer__item-image')} src="../img/appstore.png" alt="" />
+                        <a href="https://apps.apple.com/app/id1430094474?fbclid=IwAR3xAzj-xTmtj35aQUB8KhTLk1zFgyw2zssisSyn9qkRA6w4fgt6kI7j8Q8" target="_blank">
+
+                            <img className={cx('footer__item-image')} src="../img/appstore.png" alt="" />
+                        </a>
                     </li>
                     <li className={cx('footer__item')}>
-                        <img className={cx('footer__item-image')} src="../img/googleplay.png" alt="" />
+                        <a href="https://play.google.com/store/apps/details?id=com.ivymoda.app&fbclid=IwAR2Ki0MhC0MdCSEqmnP9BUNLhKg7ZresCBqA8BfRkPBBswJ99-YNqOX4cL8" target="_blank">
+                            <img className={cx('footer__item-image')} src="../img/googleplay.png" alt="" />
+
+                        </a>
                     </li>                 
                 </ul>
 

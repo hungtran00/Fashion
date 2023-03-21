@@ -28,6 +28,18 @@
     }
 
     &__price {
+
+
+        &-list {
+            display: flex;
+
+            &>span {
+                font-size: 1.3rem;
+                margin-left: 40px;
+                text-decoration: line-through;
+                margin-top: 8px;
+            }
+        }
         color        : var(--text-color);
         font-size    : 2.6rem;
         margin-bottom: 1rem;
@@ -49,31 +61,34 @@
             }
 
             &>button {
-                color: black;
+                color: white;
                 border: none;
-                padding: 10px 7px;
+                height: 50px;
+                width: 50px;
                 font-family: "Noto Sans", sans-serif;
-                border-radius: 43px;
-                margin: 10px 10px 10px 0;
+                border-radius: 50%;
+                margin: 10px 15px 10px 0;
                 cursor: pointer;
+                
             }
         }
 
-        // &-black {
-        //     background-color: black;
-        // }
-        // &-blue {
-        //     background-color: blue;
-        // }
-        // &-pink {
-        //     background-color: pink;
-        // }
-        // &-gray {
-        //     background-color: gray;
-        // }
-        // &-white {
-        //     background-color: white;
-        // }
+        &-Black {
+            background-color: black;
+        }
+        &-Blue {
+            background-color: rgb(69, 137, 214);
+        }
+        &-Pink {
+            background-color: rgb(247, 102, 194);
+        }
+        &-Gray {
+            background-color: rgb(181, 181, 181);
+        }
+        &-White {
+            background-color: rgb(245, 245, 245);
+            border          : 1px solid rgb(202, 201, 201);
+        }
 
         &-selected {
             background-color: teal;
@@ -109,10 +124,11 @@
     }
 
     &__service {
+        margin-top: 19px;
         &>button {
             background-color: var(--primary-color);
             border          : none;
-            padding         : 0.5rem 1rem;
+            padding         : 5px 10px;
             border-radius   : 2rem;
             margin-bottom   : 2rem;
             cursor          : pointer;
@@ -134,6 +150,7 @@
             padding-bottom: 0.2rem;
             border-radius : 2rem;
             margin-right  : 2rem;
+            height: 25px;
         }
 
 
