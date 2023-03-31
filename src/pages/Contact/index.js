@@ -41,21 +41,22 @@ function Contact(props) {
                                 <h1>Địa điểm</h1>
                                 <p>Tầng 14, Toà nhà Hapulico
                                 <br/>
-                                 Complex 24T- 85 Vũ Trọng Phụng 
+                                 Complex 24T- 85 Vũ Trọng 
                                  <br/>
-                                 Quận Thanh Xuân, HN</p>
+                                 Phụng Quận Thanh Xuân, HN</p>
                             </div>
                         </div>
                         <div className={cx('contact__container_list')}>
                             <CiMail className={cx('contact__container_list-icon')}/>
                             <div className={cx('contact__container__list_map')}>
                                 <h1>Email</h1>
-                                <p>Email: cskh@ivy.com.vn</p>
+                                <p>saleadmin@ivy.com.vn
+                                </p>
                             </div>
                         </div>
                         <div className={cx('contact__container_list')}>
                             <BsPhoneVibrate className={cx('contact__container_list-icon')}/>
-                            <div className={cx('contact__container_map')}>
+                            <div className={cx('contact__container__list_map')}>
                                 <h1>Mua hàng online</h1>
                                 <p>+ (84) 24 6662 3434</p>
                             </div>
@@ -65,13 +66,14 @@ function Contact(props) {
                             <div className={cx('contact__container__list_map')}>
                                 <h1>Chăm sóc khách hàng</h1>
                                 <p>Email: cskh@ivy.com.vn
-                                <br/>
-                                Hotline: 0905 89 86 83
-                                <br/>
-                                Thứ Hai đến Thứ Bảy, từ 8:00 đến 17:30
+                                    <br/>
+                                    Hotline: 0905 89 86 83
+                                    <br/>
+                                    Thứ Hai đến Thứ Bảy, từ 8:00 đến 17:30
                                 </p>
                             </div>
                         </div>
+                        
                     </div>
                     <div className={cx('contact__container_right')}>
                         <div className={cx('contact__container_form')}>

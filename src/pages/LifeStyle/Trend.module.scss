@@ -1,0 +1,169 @@
+.life {
+    padding-right: 150px;
+    padding-left: 150px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 100%;
+    &__container {
+        max-width: 1200px;
+
+        &>p {
+            font-size: 1.8rem;
+            margin: 30px 0;
+            font-weight: 300;
+        }
+        &_content {
+            
+            h1 {
+                font-size: 7.5rem;
+                text-align: center;
+                margin: 55px 0 35px 0;
+            }
+            &_list {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                list-style-type: none;
+            }
+            &_item {
+                margin: 10px;
+
+                &_list {
+                    font-size: 2rem;
+                    padding: 8px;
+                    font-weight: 300;
+                }
+            }
+        }
+        
+    }
+    &__content {
+        display: flex;
+        border-top-left-radius: 70px;
+        border-bottom-right-radius: 70px;
+        border: 1px solid #999;
+        margin-top: 50px;
+        &_left {
+            padding: 15px;
+            width: 50%;
+            p {
+                font-size: 1.8rem;
+                opacity: 0.7;
+                text-align: center;
+            }
+            span {
+                font-size: 1.8rem;
+                opacity: 0.7;
+                text-align: center;
+            }
+            h1 {
+                font-size: 3.4rem;
+                margin: 20px 0;
+                font-weight: 500;
+            }
+            h2 {
+                font-size: 1.4rem;
+                font-weight: 300;
+                line-height: 1.5;
+                margin-bottom: 30px;
+                
+            }
+            &_title {
+                font-size: 3.4rem;
+                margin: 20px 0;
+                font-weight: 500;
+                text-align: center;
+                opacity: 0.9;
+            }
+            &_desc {
+                font-size: 1.4rem;
+                font-weight: 300;
+                line-height: 1.5;
+                margin-bottom: 30px;
+                text-align: center;
+            }
+        }
+        &_right {
+
+            img {
+                border-top-left-radius: 70px;
+                border-bottom-right-radius: 70px;
+                width: 100%;
+            }
+        }
+        &_title {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            margin-top: 55px;
+            margin-left: 15px;
+
+            &_list {
+                width: 350px;
+                
+                
+                img {
+                    width: 350px;
+                }
+                h2 {
+                    font-size: 1.4rem;
+                    font-weight: 300;
+                    line-height: 1.7;
+                }
+                h1 {
+                    font-size: 1.6rem;
+                    line-height: 1.5;
+                    margin: 15px 0;
+                }
+                p {
+                    font-size: 1.4rem;
+                    opacity: 0.8;
+                }
+            }
+        }
+        &_dark {
+
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            margin: 55px 0;
+            // margin-left: 15px;
+            background-color: black;
+            padding: 20px;
+
+
+            span {
+                font-size: 2.5rem;
+                text-align: center;
+                margin: 20px 0;
+                color: white;
+            }
+
+            &_list {
+                width: 350px;
+                
+                
+                img {
+                    width: 350px;
+                    margin: 10px 0 25px 0;
+                }
+                h2 {
+                    font-size: 1.4rem;
+                    font-weight: 300;
+                    line-height: 1.7;
+                    color: white;
+                }
+                h1 {
+                    font-size: 1.6rem;
+                    line-height: 1.5;
+                    margin: 15px 0;
+                    color: white;
+                }
+                p {
+                    font-size: 1.4rem;
+                    opacity: 0.8;
+                    color: white;
+                }
+            }
+        }
+    }
+
+}

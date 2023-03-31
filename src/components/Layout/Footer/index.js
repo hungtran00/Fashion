@@ -39,10 +39,10 @@ function Footer() {
                 </ul>
 
                 <ul className={cx('footer__list')}>
-                    <li className={cx('footer__title')}>Introdution</li>
+                    <li className={cx('footer__title')}>Giới thiệu</li>
                     <li className={cx('footer__item')}>
                         <NavLink to='/company'>
-                            IVY Fashion
+                            Về IVY Fashion
                         </NavLink>
                     </li>
                     {/* <li className={cx('footer__item')}>
@@ -52,7 +52,7 @@ function Footer() {
                     </li> */}
                     <li className={cx('footer__item')}>
                         <NavLink to='/system-shop'>
-                            System Shop
+                            Hệ thống cửa hàng
                         </NavLink>
                     </li>
                     {/* <li className={cx('footer__item')}>
@@ -62,40 +62,40 @@ function Footer() {
 
                 </ul>
                 <ul className={cx('footer__list')}>
-                    <li className={cx('footer__title')}>Customer Service</li>
+                    <li className={cx('footer__title')}>Dịch vụ khách hàng</li>
                     <li className={cx('footer__item')}>
                         <NavLink to='/policy'>
-                            Policy
+                            Chính sách điều khoản
                         </NavLink>
                     </li>
                     <li className={cx('footer__item')}>
                         <NavLink to='/guide-shop'>
-                             Guide shoping
+                             Hướng dẫn mua hàng
                         </NavLink>
                     </li>
                     <li className={cx('footer__item')}>
                         <NavLink to='/payment-policy'>
-                            Payment Policy
+                            Chính sách thanh toán
                         </NavLink>
                     </li>
                     <li className={cx('footer__item')}>
                         <NavLink to='/return-policy'>
-                            Return Policy
+                            Chính sách đổi trả
                         </NavLink>
                     </li>
                     {/* <li className={cx('footer__item')}>Technology</li> */}
 
                 </ul>
                 <ul className={cx('footer__list')}>
-                    <li className={cx('footer__title')}>Customer Suport</li>
+                    <li className={cx('footer__title')}>Vận chuyển</li>
                     <li className={cx('footer__item')}>
-                        <span>Shipping Unit</span>
+                        <span>Đơn vị vận chuyển</span>
                         <img className={cx('footer__item-img')} src="../img/1.png" alt="" />
                         <img className={cx('footer__item-img')} src="../img/2.png" alt="" />
                         <img className={cx('footer__item-img')} src="../img/3.png" alt="" />
                     </li>
                     <li className={cx('footer__item')}>
-                        <span> Payment Method</span>
+                        <span>Phương thức thanh toán</span>
                         <img className={cx('footer__item-img')} src="../img/4.png" alt="" />
                         <img className={cx('footer__item-img')} src="../img/5.png" alt="" />
                         <img className={cx('footer__item-img')} src="../img/6.png" alt="" />

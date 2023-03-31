@@ -1,5 +1,5 @@
 import Contact from "../pages/Contact";
-import Features from "../pages/Features";
+import LifeStyle from "../pages/LifeStyle/LifeStyle";
 import Home from "../pages/Home"
 import Shop from "../pages/Shop";
 import Cart from "../pages/Cart/Cart";
@@ -12,6 +12,12 @@ import Recruiment from "../components/Layout/Footer/Recruiment"
 import SystemShop from "../components/Layout/Footer/SystemShop";
 import Guideshop from "../components/Layout/Footer/Guideshop";
 import PaymentPolicy from "../components/Layout/Footer/PaymentPolicy";
+// import ReturnPolicy from "../components/Layout/Footer/ReturnPolicy";
+import News from "../pages/LifeStyle/News";
+import Knowledge from "../pages/LifeStyle/Knowledge";
+import Trend from "../pages/LifeStyle/Trend";
+import Style from "../pages/LifeStyle/Style";
+import Blogs from "../pages/LifeStyle/Blogs"
 import ReturnPolicy from "../components/Layout/Footer/ReturnPolicy";
 
 const publicRoutes = [
@@ -29,7 +35,22 @@ const publicRoutes = [
         path: '/shop/:id', component: ProductDetail
     },
     {
-        path: '/features', component: Features
+        path: '/lifestyle', component: LifeStyle
+    },
+    {
+        path: '/lifestyle/news', component: News
+    },
+    {
+        path: '/lifestyle/knowledge', component: Knowledge
+    },
+    {
+        path: '/lifestyle/trend', component: Trend
+    },
+    {
+        path: '/lifestyle/style', component: Style
+    },
+    {
+        path: '/lifestyle/blogs', component: Blogs
     },
     {
         path: '/login', component: Login

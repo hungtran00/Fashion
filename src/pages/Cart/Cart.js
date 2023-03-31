@@ -4,7 +4,8 @@ import 'sweetalert2/src/sweetalert2.scss'
 import classNames from 'classnames/bind'
 import { useDispatch, useSelector } from 'react-redux';
 import { clearCart, deleteToCart, updateTocart } from '../../reducers/cart/cartSlice';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
+import {BsArrowLeft} from 'react-icons/bs'
 const cx = classNames.bind(styles);
 function Cart() {
     const dispatch = useDispatch()
@@ -105,10 +106,64 @@ function Cart() {
 
 
             </div>
+            <div className={cx('cart__address')}>
+                <p>Chọn hình thức giao hàng</p>
+                <div className={cx('cart__address_list')}>
+                    <input type="radio" />
+                    <span>Nhận hàng tại chi nhánh</span>
+                </div>
+                <div className={cx('cart__address_list')}>
+                    <input type="radio" />
+                    <span>Giao hàng tại địa chỉ người nhận</span>
+                </div>
+            </div>
+            <div className={cx('cart__info')}>
+                <h1>Thông tin người mua hàng</h1>
+                <div className={cx('cart__info_customer')}>
+                    <div className={cx('cart__info_customer_list')}>
+                        <h2>Tên</h2>
+                        <input type="text" placeholder='Họ và tên' required />
+                    </div>
+                    <div className={cx('cart__info_customer_list')}>
+                        <h2>Số điện thoại</h2>
+                        <input type="text" placeholder='Số điện thoại' required />
+                    </div>
+                </div>
+                <h3>Địa chỉ</h3>
+                <input type="text" placeholder='Nhập địa chỉ' />
+                <div className={cx('cart__info_customer')}>
+                    <div className={cx('cart__info_customer_list')}>
+                        <h2>Tỉnh/ Thành phố</h2>
+                        <select name="" id="" placeholder='Chọn Tỉnh/ Thành phố Quận/ Huyện' required>
+                            
+                            <option value="">Hà Tĩnh</option>
+                            <option value="">Nghệ An</option>
+                            <option value="">Quảng Bình</option>
+                            <option value="">Huế</option>
+                            
+                        </select>
+                    </div>
+                    <div className={cx('cart__info_customer_list')}>
+                        <h2>Phường/ Xã</h2>
+                        <select name="" id="" placeholder='Chọn Phường/ Xã' required>
+                            
+                            <option value="">Thạch Hà</option>
+                            <option value="">Kỳ Anh</option>
+                            <option value="">Vinh</option>
+
+                        </select>
+                    </div>
+                </div>
+                <h3>Ghi chú</h3>
+                <input type="text" placeholder='Lưu ý cho người bán' required/>
+            </div>
+
             <div className={cx('cart__service')}>
-                <div>
-                    <input type="text" placeholder="Coupon code.." />
-                    <button>APPLY</button>
+                <div className={cx('cart__service_button')}>
+                    <BsArrowLeft className={cx('cart__service_icon')}/>
+                    <NavLink to='/shop'>
+                        <a href="">TIẾP TỤC MUA HÀNG</a>
+                    </NavLink>
                 </div>
 
                 <div>

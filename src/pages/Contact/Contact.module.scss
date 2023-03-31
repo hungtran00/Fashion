@@ -21,28 +21,33 @@
         }
     }
     &__container {
-        display: flex;
-        // grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        position             : relative;
+        // top                  : 10rem;
+        display              : flex;
+        max-width            : 1200px;
+        width                : 100%;
+        margin               : auto;
+        padding-bottom       : 3rem;
+        // grid-template-columns: 1fr 1fr;
         margin-top: 30px;
 
         &_left {
+            width: 40%;
             margin-top: 45px;
-            // max-width: 60%;
-            // grid-template-columns: 1fr 1fr;
+            margin-right: 50px;
         }
         &_right {
-            width: 80%;
-            // margin-left: 40px;
-            // grid-template-columns: 1fr 1fr 1fr 1fr;
+            width: 60%;
+            
         }
         &_list {
             display: flex;
-            justify-content: space-around;
+            // justify-content: space-around;
             align-items: center;
             border: 1px solid #999;
             margin-bottom: 40px;
             border-top-left-radius: 40px;
-            border-bottom-right-radius: 40px;
+            // border-bottom-right-radius: 40px;
             margin-right: 40px;
             padding: 25px;
             // width: 80%;
@@ -61,31 +66,38 @@
                 margin-right: 30px;
             }
 
-            &_map {
+            
+        }
+        &__list {
 
+            &_map {
+                margin-left: 35px;
                 &>h1 {
                     font-size: 1.6rem;
                 }
                 p {
-                    font-size: 1.4rem;
+                    font-size: 1.3rem;
+                   
+                    line-height: 1.5;
                 }
             }
+
         }
         &_form {
-            // margin-left: 150px;
-            // background-color: #f9f9f9;
             padding: 25px;
             margin: 45px 0 0 0;
             border-top-left-radius: 60px;
             border-bottom-right-radius: 60px;
             border: 1px solid #999;
+
+           
         
             &__list {
                 display: flex;
 
 
                 &_button {
-                    width: 22%;
+                    width: 35%;
                     display: block;
                     outline: none;
                     border: none;
@@ -111,8 +123,8 @@
             h1 {
                 // text-align: center;
                 margin: 30px 0 20px 0;
-                font-size: 25px;
-                font-weight: bold;
+                font-size: 20px;
+                font-weight: 600;
                 
             }
             
@@ -161,7 +173,7 @@
             }
         }
         &-right {
-            margin-left: 25px;
+            margin-left: 45px;
              img {
 
              }

@@ -1,0 +1,41 @@
+.life {
+    padding-right: 150px;
+    padding-left: 150px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 100%;
+    &__container {
+        max-width: 1200px;
+
+        &>p {
+            font-size: 1.8rem;
+            margin: 30px 0;
+            font-weight: 300;
+        }
+        &_content {
+            
+            h1 {
+                font-size: 7.5rem;
+                text-align: center;
+                margin: 55px 0 35px 0;
+            }
+            &_list {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                list-style-type: none;
+            }
+            &_item {
+                margin: 10px;
+
+                &_list {
+                    font-size: 2rem;
+                    padding: 8px;
+                    font-weight: 300;
+                }
+            }
+        }
+    }
+   
+
+}

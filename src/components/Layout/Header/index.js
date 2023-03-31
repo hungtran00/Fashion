@@ -36,10 +36,10 @@ function Header() {
             <div className={cx('header__menu')}>
                 <ul className={cx('header__list')}>
 
-                    <NavLink to='/' style={({ isActive }) => isActive ? activeStyle : undefined} className={cx('header__item')} end><span>HOME</span></NavLink>
-                    <NavLink to='/shop' className={({ isActive }) => isActive ? cx("activeNav", "header__item") : cx("header__item")} ><span>SHOP</span></NavLink>
-                    <NavLink to='/contact' className={({ isActive }) => isActive ? cx("activeNav", "header__item") : cx("header__item")} ><span>CONTACT</span></NavLink>
-                    <NavLink to='/features' className={({ isActive }) => isActive ? cx("activeNav", "header__item") : cx("header__item")} ><span>FEATURES</span></NavLink>
+                    <NavLink to='/' style={({ isActive }) => isActive ? activeStyle : undefined} className={cx('header__item')} end><span>TRANG CHỦ</span></NavLink>
+                    <NavLink to='/shop' className={({ isActive }) => isActive ? cx("activeNav", "header__item") : cx("header__item")} ><span>SẢN PHẨM</span></NavLink>
+                    <NavLink to='/contact' className={({ isActive }) => isActive ? cx("activeNav", "header__item") : cx("header__item")} ><span>LIÊN HỆ</span></NavLink>
+                    <NavLink to='/lifestyle' className={({ isActive }) => isActive ? cx("activeNav", "header__item") : cx("header__item")} ><span>LIFESTYLE</span></NavLink>
                 </ul>
             </div>
             <div className={cx('header__title')}>
@@ -143,10 +143,10 @@ function Header() {
                 </div>
 
                 <ul className={cx('menu__list')}>
-                    <NavLink to='/' style={({ isActive }) => isActive ? activeStyle : undefined} className={cx('header__item')} end><span>HOME</span></NavLink>
-                    <NavLink to='/shop' className={({ isActive }) => isActive ? cx("activeNav", "header__item") : cx("header__item")} ><span>SHOP</span></NavLink>
-                    <NavLink to='/contact' className={({ isActive }) => isActive ? cx("activeNav", "header__item") : cx("header__item")} ><span>CONTACT</span></NavLink>
-                    <NavLink to='/features' className={({ isActive }) => isActive ? cx("activeNav", "header__item") : cx("header__item")} ><span>FEATURES</span></NavLink>
+                    <NavLink to='/' style={({ isActive }) => isActive ? activeStyle : undefined} className={cx('header__item')} end><span>TRANG CHỦ</span></NavLink>
+                    <NavLink to='/shop' className={({ isActive }) => isActive ? cx("activeNav", "header__item") : cx("header__item")} ><span>SẢN PHẨM</span></NavLink>
+                    <NavLink to='/contact' className={({ isActive }) => isActive ? cx("activeNav", "header__item") : cx("header__item")} ><span>LIÊN HỆ</span></NavLink>
+                    <NavLink to='/lifestyle' className={({ isActive }) => isActive ? cx("activeNav", "header__item") : cx("header__item")} ><span>LIFESTYLE</span></NavLink>
                 </ul>
 
             </div>
