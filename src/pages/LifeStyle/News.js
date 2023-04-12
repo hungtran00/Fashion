@@ -14,14 +14,7 @@ const cx = classNames.bind(styles)
 
 
 const News = () => {
-    const dispatch = useDispatch()
-    const product = useSelector((state) => state.product)
-    useEffect(() => {
-        dispatch(getProduct())
-    }, [])
-    const handleAddToCart = (product) => {
-        dispatch(addToCart(product))
-    }
+   
     return (
         <div className={cx('life')}>
                 <div className={cx('life__container')}>
@@ -104,10 +97,8 @@ const News = () => {
                             <p>08/10/2022</p>
                         </div>
                     </div>
-                    
-
                 </div>
-            </div>
+        </div>
     );
 };
 

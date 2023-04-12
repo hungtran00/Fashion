@@ -103,7 +103,8 @@ function Contact(props) {
                         <p>IVY moda là thương hiệu thời trang Việt Nam với mong muốn đem lại vẻ đẹp hiện đại và sự tự tin cho khách hàng, thông qua các dòng sản phẩm thời trang thể hiện cá tính và xu hướng. Một trong những “tôn chỉ” về thiết kế của IVY moda chính là sự đa dạng, với mong muốn mang đến cho người mặc những sản phẩm phù hợp nhất với ngoại hình và quan trọng hơn cả là cá tính của chính mình.</p>
                     </div>
                     <div className={cx('contact__footer-right')}>
-                        <img src="../img/map.jpg" alt="" />
+                        <iframe className={cx('contact__footer_map')} src="https://maps.google.com/maps?width=880&amp;height=558&amp;hl=en&amp;q=Tổ dân phố Tháp, P.Đại Mỗ, Q.Nam Từ Liêm, TP.Hà Nội, Việt Nam&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+                        {/* <img src="../img/map.jpg" alt="" /> */}
                     </div>
                 </div>
 

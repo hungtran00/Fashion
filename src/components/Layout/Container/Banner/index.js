@@ -15,51 +15,54 @@ function Banner() {
     
     
     const images = [
-        "https://pubcdn.ivymoda.com/files/news/2023/03/06/63de1b697d785a9f15c3bef27024e165.jpg",
+        "https://pubcdn.ivymoda.com/files/news/2023/04/04/e6040ccd4851b499d0f2685dce521b54.jpg",
         "https://pubcdn.ivymoda.com/files/news/2023/03/06/dd8cd9fb84343609f1dfb9a5a7c96609.jpg",
-        "https://pubcdn.ivymoda.com/files/news/2023/03/02/0df19551f0ae0598381bce05ea115d8a.jpg"
+        "https://pubcdn.ivymoda.com/files/news/2023/03/06/63de1b697d785a9f15c3bef27024e165.jpg",
+        "https://pubcdn.ivymoda.com/files/news/2023/03/02/0df19551f0ae0598381bce05ea115d8a.jpg",
+        "https://pubcdn.ivymoda.com/files/news/2023/04/05/7249e100ac1616a3fa09a35ad4dd41e7.jpg"
         
     ]
     
     const [crr, setCrr] = useState(0)
 
     const Next = () => {
-        if(crr !== images.length){
-            setCrr(crr + 1)
-        } else if (crr === images.length){
-            setCrr(0)
-        }
+        setCrr(crr === images.length - 1 ? 0 : crr + 1)
     }
     
 
     const Prev = () => {
-       if(crr !== 0){
-            setCrr(crr - 1)
-       } else if (crr === 0){
-            setCrr(images.length)
-       }
+    setCrr(crr === 0 ? images.length - 1 : crr - 1)
     }
     
-    
+    const Nextslider = (idex) => {
+        setCrr(idex)
+    }
     return (
         <div className={cx('bannertop')}>
             <div className={cx('bannertop__img')}>
                 {images.map((image,index)=>{
                     return (
                         <div key={index} className={cx('bannertop__item')}>
-                            <img src={image} alt="" />
+                            {index === crr && ( 
+                                <img src={image} alt="" />
+                            )}
+                        </div>
+                    )
+                })}
+            </div>
+            <div className={cx('bannertop__list')}>
+                {images.map((item,idex) => {
+                    return (
+                        <div className={cx('bannertop__list_item')} key={idex} onClick={() => Nextslider(idex)}>
+                            <div className={cx(crr === idex ? 'bannertop__list_item_red' : 'bannertop__list_item_black')}>
+                                .
+                            </div>
                         </div>
                     )
                 })}
             </div>
             <div className={cx('bannertop__container')}>
-                <div className={cx('bannertop__title')}>
-                    Welcome
-                </div>
-                <div className={cx('bannertop__content')}>
-                  
-                </div>
-                <button onClick={scrollToProduct} className={cx('bannertop__button')}>SHOP NOW</button>
+                {/* <button onClick={scrollToProduct} className={cx('bannertop__button')}>SHOP NOW</button> */}
             </div>
             <div className={cx('btnLeft')}>
                 <BsArrowLeft onClick={Prev} />
@@ -67,7 +70,7 @@ function Banner() {
             <div className={cx('btnRight')}>
                 <BsArrowRight onClick={Next}/>
             </div>
-
+           
         </div>
 
     )

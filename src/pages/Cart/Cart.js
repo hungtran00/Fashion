@@ -6,6 +6,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { clearCart, deleteToCart, updateTocart } from '../../reducers/cart/cartSlice';
 import { Link, NavLink } from 'react-router-dom';
 import {BsArrowLeft} from 'react-icons/bs'
+import {AiOutlineDelete} from 'react-icons/ai'
 const cx = classNames.bind(styles);
 function Cart() {
     const dispatch = useDispatch()
@@ -17,16 +18,16 @@ function Cart() {
     const cart = useSelector(state => state.cart)
 
     return (<div className={cx('cart')}>
-        <div className={cx('cart__title')}>CART</div>
+        <div className={cx('cart__title')}>GIỎ HÀNG</div>
         <div className={cx('cart__container')}>
             <div className={cx('cart__content')}>
 
                 <ul className={cx('cart__label')}>
                     <li></li>
-                    <li>PRODUCT</li>
-                    <li>PRICE</li>
-                    <li>QUANTITY</li>
-                    <li>SUBTOTAL</li>
+                    <li>SẢN PHẨM</li>
+                    <li>GIÁ</li>
+                    <li>SỐ LƯỢNG</li>
+                    <li>TỔNG</li>
                 </ul>
                 {
                     cart.cartItem.length === 0 ?
@@ -52,7 +53,7 @@ function Cart() {
                                         <li className={cx('cart__clear')}>
                                             <span onClick={() => {
                                                 dispatch(deleteToCart(item))
-                                            }}>X</span>
+                                            }}><AiOutlineDelete/></span>
                                         </li>
                                     </ul>)
 
@@ -76,7 +77,7 @@ function Cart() {
                                             <span className={cx('cart__name')}>{item.name}</span>
                                         </li>
                                         <li className={cx('cartRepon__quanlity')}>
-                                            <span>QUANTITY</span>
+                                            <span>SỐ LƯỢNG</span>
                                             <div className={cx('cartRepon__service')} >
                                                 <button onClick={() => handleUpdateCart(item, false)}>-</button>
                                                 {item.cartQuanlity}
@@ -86,18 +87,18 @@ function Cart() {
 
                                         </li>
                                         <li className={cx('cartRepon__price')}>
-                                            <span> PRICE</span>
+                                            <span>GIÁ</span>
                                             <span>${item.price}.00</span>
                                         </li>
 
                                         <li className={cx('cartRepon__subtotal')}>
-                                            <span>SUBTOTAL</span>
+                                            <span>TỔNG</span>
                                             <span>${parseInt(item.price) * parseInt(item.cartQuanlity)}.00</span>
                                         </li>
                                         <li className={cx('cartRepon__clear')}>
                                             <span onClick={() => {
                                                 dispatch(deleteToCart(item))
-                                            }}>X</span>
+                                            }}><AiOutlineDelete/></span>
                                         </li>
                                     </ul>)
 
@@ -190,7 +191,7 @@ function Cart() {
                             })
                         }
 
-                    }}>CHECK OUT</button>
+                    }}>ĐẶT HÀNG</button>
                 </div>
 
             </div>

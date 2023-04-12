@@ -1,35 +1,25 @@
 .bannertop {
-    // height           : calc(100vh - 6.5rem);
-    // background-repeat: no-repeat;
-    // background-size  : cover;
-    // background-image : url('../../../../../public/img/slide1-bg.jpg');
-    // background-image : url('../../../../../public/img/slider2.jpg');
-    // display          : flex;
-    // justify-content  : center;
-    // align-items      : center;
     position         : relative;
     
 
     &__img {
-        // display: flex;
-        // overflow-y: hidden;
-        // overflow-x: hidden;
-        max-width: 1200px;
-        height: 500px;
-        margin: 100px auto 0;
+        max-width: 1350px;
+        height: 600px;
+        margin: 0px auto 0;
         position: relative;
         overflow: hidden;
         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        border-bottom-right-radius: 100px;
+        border-top-left-radius: 100px;
         
         
-    
     }
-
+    
     &__item {
-      
-
+       
+        transition: all;
         img {
-          
+         
         }
         
         
@@ -70,8 +60,9 @@
     .btnLeft {
         position: absolute;
         top: 40%;
-        left: 30px;
-        font-size: 3rem;
+        left: 100px;
+        font-size: 4rem;
+        font-weight: bold;
         color: black;
         display: flex;
         align-items: center;
@@ -85,8 +76,9 @@
     .btnRight {
         position: absolute;
         top: 40%;
-        right: 30px;
-        font-size: 3rem;
+        right: 100px;
+        font-size: 4rem;
+        font-weight: bold;
         color: black;
         align-items: center;
         display: flex;
@@ -96,6 +88,31 @@
             opacity: 1;
             cursor: pointer;
             transition: all 3s;
+        }
+    }
+    &__list {
+        // position: absolute;
+        // bottom: 15px;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        justify-content: center;
+        &_item {
+            border-radius: 67px;
+            width: 6px;
+            height: 6px;
+            padding: 7px;
+            background-color: black;
+            margin: 15px 5px;
+            cursor: pointer;
+            opacity: 0.8;
+
+            &_red {
+                color: red;
+            }
+            &_black {
+                color: black;
+            }
         }
     }
 }

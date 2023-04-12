@@ -3,7 +3,9 @@
     max-width: 1200px;
     width    : 100%;
     margin   : 8rem auto;
-
+    &__content {
+        border: 1px solid #f0f0f0;
+    }
     &__title {
         font-size    : 3rem;
         font-weight  : 600;
@@ -170,6 +172,9 @@
 
 
             }
+            &>a {
+                font-size: 1.4rem;
+            }
         }
         &_icon {
             font-size: 1.4rem;
@@ -212,6 +217,11 @@
     &__clear {
         font-weight: 600;
         cursor     : pointer;
+
+        &>span {
+            font-size: 2rem;        
+
+        }
     }
 
     &__address {
@@ -420,6 +430,7 @@
         text-align : end;
         font-weight: 600;
         cursor     : pointer;
+        
 
     }
 }

@@ -51,6 +51,25 @@
         display     : flex;
         margin-right: 2rem;
 
+        &_search {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #999;
+            padding: 10px 15px;
+            border-radius: 4px;
+
+            &_icon {
+                font-size: 2rem;
+            }
+
+            &>input {
+                outline: none;
+                border: none;
+                height: 15px;
+                margin-left: 8px;
+            }
+        }
         &>span:nth-child(6) {
             display: none;
         }
@@ -153,6 +172,7 @@
             cursor   : pointer;
             position : absolute;
             right    : 2rem;
+            
         }
     }
 
@@ -171,7 +191,7 @@
     }
 
     &__view {
-        font-size       : 2rem;
+        font-size       : 1.5rem;
         position        : absolute;
         display         : block;
         left            : 1rem;

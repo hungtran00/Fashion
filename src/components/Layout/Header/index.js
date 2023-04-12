@@ -3,6 +3,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import classNames from 'classnames/bind'
 import styles from './Header.module.scss'
 import { faBars, faXmark, faLocationDot, faUserTie, faEnvelope, faHeart, faCartShopping } from '@fortawesome/free-solid-svg-icons'
+import {AiOutlineDelete} from 'react-icons/ai'
+import {CiSearch} from 'react-icons/ci'
 import { Link, NavLink } from 'react-router-dom'
 import { Fragment, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
@@ -46,18 +48,14 @@ function Header() {
                 <Link to='/'>FASHION SHOP</Link>
             </div>
             <div className={cx('header__icon')}>
-                <span>
-
-                    <FontAwesomeIcon icon={faLocationDot} />
-                </span>
+                <div className={cx('header__icon_search')}>
+                    <CiSearch className={cx('header__icon_search_icon')}/>
+                    <input type="text" placeholder='Tìm kiếm sản phẩm' />
+                </div>
                 <span>
                     <NavLink className={({ isActive }) => isActive ? cx("activeNav") : undefined} to="/login">
                         <FontAwesomeIcon icon={faUserTie} />
                     </NavLink>
-                </span>
-                <span>
-
-                    <FontAwesomeIcon icon={faEnvelope} />
                 </span>
                 <span>
 
@@ -98,7 +96,7 @@ function Header() {
                                 <div className={cx('item__quanlity')}>x{item.cartQuanlity}</div>
                             </div>
                             <span onClick={() => handleClear(item)}>
-                                <FontAwesomeIcon icon={faXmark} />
+                                <AiOutlineDelete/>
                             </span>
 
                         </div>)
@@ -106,7 +104,7 @@ function Header() {
                 }
             </div>
             <div className={cx('cart__footer')}>
-                <Link className={cx('cart__view')} to="/cart">VIEW CART</Link>
+                <Link className={cx('cart__view')} to="/cart">XEM GIỎ HÀNG</Link>
                 <div className={cx('cart__price')}>Total: $
                     {
                         cartPrice.reduce((price, item) => {
